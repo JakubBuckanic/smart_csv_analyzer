@@ -1,14 +1,6 @@
 import pandas as pd
 
 
-import pandas as pd
-import textwrap
-
-import streamlit as st
-import io
-from PIL import Image
-
-
 def generate_summary(df):
     n_rows, n_cols = df.shape
     numeric_cols = df.select_dtypes(include="number").columns.tolist()

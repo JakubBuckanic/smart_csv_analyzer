@@ -1,15 +1,11 @@
 import matplotlib.pyplot as plt
-import streamlit as st
 import numpy as np
-import matplotlib.patches as patches
+import streamlit as st
+import base64
+import io
+
 
 COLOR_TEXT = "#333333"
-import io
-import base64
-
-import io
-import base64
-import streamlit as st
 
 
 def render_chart_with_download(fig, filename="chart.png"):
