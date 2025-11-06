@@ -3,6 +3,12 @@
 
 import streamlit as st
 import pandas as pd
+from fpdf import FPDF
+from io import BytesIO
+from PIL import Image
+import matplotlib.pyplot as plt
+import tempfile
+from bs4 import BeautifulSoup
 
 
 def show_overview(df):
@@ -50,14 +56,6 @@ def show_column_info(df):
         )
     else:
         st.success("✅ No missing values found.")
-
-
-from fpdf import FPDF
-from io import BytesIO
-from PIL import Image
-import matplotlib.pyplot as plt
-import tempfile
-from bs4 import BeautifulSoup
 
 
 def export_full_report_to_pdf(df, summary_html, stats_df, chart_figs):
